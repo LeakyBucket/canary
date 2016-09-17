@@ -1,0 +1,3 @@
+fill_field({:id, "user"}, "Me")
+    fill_field({:id, "pass"}, "Password")
+    submit_element({:id, "pass"})
