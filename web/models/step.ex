@@ -4,6 +4,7 @@ defmodule Canary.Step do
   schema "steps" do
     field :name, :string
     field :actions, :map
+    many_to_many :tests, Canary.Test, join_through: Canary.TestStep
 
     timestamps()
   end

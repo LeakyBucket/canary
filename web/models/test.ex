@@ -3,6 +3,7 @@ defmodule Canary.Test do
 
   schema "tests" do
     field :name, :string
+    many_to_many :steps, Canary.Step, join_through: Canary.TestStep
 
     timestamps()
   end
