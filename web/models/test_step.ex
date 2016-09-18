@@ -3,6 +3,8 @@ defmodule Canary.TestStep do
 
   schema "tests_steps" do
     field :position, :integer
+    belongs_to :steps, Canary.Step
+    belongs_to :tests, Canary.Test
 
     timestamps()
   end
