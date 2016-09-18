@@ -20,6 +20,8 @@ defmodule Canary.Web do
     quote do
       use Ecto.Schema
 
+      @primary_key {:id, :binary_id, autogenerate: true}
+
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
