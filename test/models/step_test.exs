@@ -3,7 +3,7 @@ defmodule Canary.StepTest do
 
   alias Canary.Step
 
-  @valid_attrs %{actions: %{}, name: "some content"}
+  @valid_attrs %{actions: [%{}], name: "some content"}
   @invalid_attrs %{}
 
   test "changeset with valid attributes" do
