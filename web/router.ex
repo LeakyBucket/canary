@@ -22,7 +22,9 @@ defmodule Canary.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", Canary do
-  #   pipe_through :api
-  # end
+  scope "/api", Canary do
+    pipe_through :api
+
+    resources "/test_runs", TestRunController
+  end
 end
